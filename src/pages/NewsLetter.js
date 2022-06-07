@@ -29,7 +29,7 @@ export default function NewsLetter() {
       <div>
         <Toaster position="top-center" reverseOrder={false} />
       </div>
-      <div className=" w-full h-screen relative">
+      <div className=" w-full h-screen  bg-[#E0E9FF] relative flex items-center p-0">
         <div className=" hidden lg:flex bg-[#1E1E1E] h-screen w-1/2 absolute left-0 justify-center items-center">
           <img
             src={require("../assets/Logo.png")}
@@ -37,17 +37,17 @@ export default function NewsLetter() {
             className=" w-64 h-64"
           />
         </div>
-        <div className="h-screen w-full lg:w-1/2 bg-[#E0E9FF] absolute right-0 p-10 justify-center items-center flex">
-          <div className=" w-full h-fit h-max-[] max-w-[400px] flex items-center flex-col">
+        <div className="h-fit w-full lg:w-1/2 bg-[#E0E9FF] absolute right-0 p-10 justify-center items-center flex">
+          <div className=" w-full h-fit max-w-[400px] flex items-center flex-col">
             <img
               src={require("../assets/Logo.png")}
               alt="logo"
               className="lg:hidden w-24 h-24 rounded-md"
             />
-            <h1 className=" text-xl lg:text-2xl mt-10 poppins font-semibold">
+            <h1 className=" text-md lg:text-2xl mt-10 poppins font-semibold">
               Subscribe to the NewsLetter
             </h1>
-            <p className=" text-justify mt-5 font-extralight">
+            <p className=" font-extralight text-sm lg:text-md text-justify mt-5">
               Thanks for showing interest in <b>Codurz</b>.<b> Codurz</b> is
               under production. Once released, It'll be able to provide an
               all-in-one suite containing tools for developers and educators.
