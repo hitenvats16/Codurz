@@ -7,7 +7,7 @@ import { Toaster } from "react-hot-toast";
 export default function NewsLetter() {
   const emailRef = useRef();
   const nameRef = useRef();
-  const [disabled,setDisabled] = useState(false);
+  const [disabled, setDisabled] = useState(false);
 
   const onClickHandler = async () => {
     setDisabled(true);
@@ -47,13 +47,17 @@ export default function NewsLetter() {
               Subscribe to the NewsLetter
             </h1>
             <p className=" text-justify mt-5 font-extralight">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus
-              condimentum varius porta. Aenean at dapibus lorem. Ut molestie
-              enim et sem egestas, non ultrices nunc dapibus. Etiam non euismod
-              tortor. Donec fermentum dui metus, consequat porttitor ex
-              fermentum sit amet. Aenean felis dui, maximus sit amet lacus eget,
-              fermentum condimentum dolor. Donec vel diam blandit, faucibus
-              ipsum a, eleifend sem.
+              Thanks for showing interest in <b>Codurz</b>. 
+               <b> Codurz</b> is under production.
+              Once released, It'll be able to provide an all-in-one suite
+              containing tools for developers and educators. Educators would be
+              able to teach coding in a tailored environment. This environment
+              would be responsible for providing the learner with an
+              extraordinary and hands-on experience. Developers would be able to
+              create production-ready applications without the hassle of
+              installing a single dependency on their machines.
+              <br></br>
+              To keep updated what is happening inside Codurz, Subscribe to the NewsLetter
             </p>
             <input
               placeholder="Your Name"
@@ -69,7 +73,7 @@ export default function NewsLetter() {
             />
             <button
               onClick={() => onClickHandler()}
-              disabled = {disabled}
+              disabled={disabled}
               className="poppins shadow-md text-md font-medium text-[#E0E9FF] w-full flex justify-center items-center bg-[#1E1E1E] py-2 rounded-md"
             >
               Subscribe
