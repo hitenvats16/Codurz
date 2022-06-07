@@ -30,11 +30,11 @@ export default function NewsLetter() {
         <Toaster position="top-center" reverseOrder={false} />
       </div>
       <div className=" w-full h-screen  bg-[#E0E9FF] relative flex items-center p-0">
-        <div className=" hidden lg:flex bg-[#1E1E1E] h-screen w-1/2 absolute left-0 justify-center items-center">
+        <div className=" hidden lg:flex bg-pattern bg-[#1e1e1e] bg-no-repeat bg-cover bg-center h-screen w-1/2 absolute left-0 justify-center items-center">
           <img
             src={require("../assets/Logo.png")}
             alt="Logo"
-            className=" w-64 h-64"
+            className=" w-64 h-64 rounded-xl shadow-2xl"
           />
         </div>
         <div className="h-fit w-full lg:w-1/2 bg-[#E0E9FF] absolute right-0 p-10 justify-center items-center flex">
