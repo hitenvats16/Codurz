@@ -20,7 +20,7 @@ export default function NewsLetter() {
       toast.success("Hurray!! Info has been added.");
     } else if (res === 400) {
       toast.error("Oops!! Fill in all details mate.");
-    }
+    } 
     setDisabled(false);
   };
 
@@ -45,7 +45,7 @@ export default function NewsLetter() {
               className="lg:hidden w-24 h-24 rounded-md"
             />
             <h1 className=" text-md lg:text-2xl mt-10 poppins font-semibold">
-              Subscribe to the NewsLetter
+              Codurz is coming soon...
             </h1>
             <p className=" font-extralight text-sm lg:text-md text-justify mt-5">
               Thanks for showing interest in <b>Codurz</b>.<b> Codurz</b> is
