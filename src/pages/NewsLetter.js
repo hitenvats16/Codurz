@@ -79,7 +79,7 @@ export default function NewsLetter() {
             >
               Subscribe
             </button>
-            <a className="w-full" href="https://www.linkedin.com/in/hiten-vats-452a76207/" target={'_blank'} rel={'noreferrer'}> 
+            <a className="w-full" href="https://www.linkedin.com/company/codurz-com" target={'_blank'} rel={'noreferrer'}> 
               <button
                 disabled={disabled}
                 className="poppins text-md font-medium w-full flex justify-center items-center border-2 border-blue-600 py-2 rounded-md transition-colors hover:bg-blue-600 hover:text-[#E0E9FF] text-blue-600"
