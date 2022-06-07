@@ -3,6 +3,7 @@ import { addSubscriberToList } from "../AddEmailSubscriber";
 import "../index.css";
 import toast from "react-hot-toast";
 import { Toaster } from "react-hot-toast";
+import { AiFillLinkedin } from "react-icons/ai";
 
 export default function NewsLetter() {
   const emailRef = useRef();
@@ -47,37 +48,48 @@ export default function NewsLetter() {
               Subscribe to the NewsLetter
             </h1>
             <p className=" text-justify mt-5 font-extralight">
-              Thanks for showing interest in <b>Codurz</b>. 
-               <b> Codurz</b> is under production.
-              Once released, It'll be able to provide an all-in-one suite
-              containing tools for developers and educators. Educators would be
-              able to teach coding in a tailored environment. This environment
-              would be responsible for providing the learner with an
-              extraordinary and hands-on experience. Developers would be able to
-              create production-ready applications without the hassle of
+              Thanks for showing interest in <b>Codurz</b>.<b> Codurz</b> is
+              under production. Once released, It'll be able to provide an
+              all-in-one suite containing tools for developers and educators.
+              Educators would be able to teach coding in a tailored environment.
+              This environment would be responsible for providing the learner
+              with an extraordinary and hands-on experience. Developers would be
+              able to create production-ready applications without the hassle of
               installing a single dependency on their machines.
               <br></br>
-              To keep updated what is happening inside Codurz, Subscribe to the NewsLetter
+              To keep updated what is happening inside Codurz, Subscribe to the
+              NewsLetter
             </p>
             <input
               placeholder="Your Name"
-              className=" poppins text-sm w-full py-2 px-5 bg-[#E0E9FF] border shadow-md border-[#8B8B8B] rounded-md mt-5 mb-2"
+              className=" poppins text-sm w-full py-2 px-5 bg-[#E0E9FF] border border-[#8B8B8B] rounded-md mt-5 mb-1"
               type={"text"}
               ref={nameRef}
             />
             <input
               placeholder="Your Email"
-              className=" poppins text-sm w-full py-2 px-5 bg-[#E0E9FF] border shadow-md border-[#8B8B8B] rounded-md mb-2"
+              className=" poppins text-sm w-full py-2 px-5 bg-[#E0E9FF] border border-[#8B8B8B] rounded-md mb-1"
               type={"email"}
               ref={emailRef}
             />
             <button
               onClick={() => onClickHandler()}
               disabled={disabled}
-              className="poppins shadow-md text-md font-medium text-[#E0E9FF] w-full flex justify-center items-center bg-[#1E1E1E] py-2 rounded-md"
+              className="poppins text-md font-medium text-[#E0E9FF] w-full flex justify-center items-center bg-[#1E1E1E] py-2 rounded-md mb-1 transition-colors hover:bg-[#313131]"
             >
               Subscribe
             </button>
+            <a className="w-full" href="https://www.linkedin.com/in/hiten-vats-452a76207/" target={'_blank'} rel={'noreferrer'}> 
+              <button
+                disabled={disabled}
+                className="poppins text-md font-medium w-full flex justify-center items-center border-2 border-blue-600 py-2 rounded-md transition-colors hover:bg-blue-600 hover:text-[#E0E9FF] text-blue-600"
+              >
+                <AiFillLinkedin size={20} className=" text-inherit" />
+                <span className=" ml-2 text-inherit">
+                  Message me to contribute
+                </span>
+              </button>
+            </a>
           </div>
         </div>
       </div>
